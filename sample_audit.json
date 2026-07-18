@@ -1,0 +1,613 @@
+{
+  "exportInfo": {
+    "exportedAt": "2026-07-18T05:46:36.212Z",
+    "generatedOn": "18/07/2026, 06:46:36",
+    "format": "JSON",
+    "source": "ViriSIM Export",
+    "version": "2.0",
+    "totalPages": 0
+  },
+  "logId": "VIRI-0014160xfsgfk",
+  "timestamp": "2026-07-05T15:32:03.335Z",
+  "userId": "va8N1SPsEJRMnHNcIKqgBm9lCP53",
+  "modelVersion": "gpt-5-turbo",
+  "company": "RothsMind Corp",
+  "useCase": "Finance",
+  "tier": "Custom",
+  "logs": [
+    {
+      "generatedOn": "18/07/2026, 06:46:36",
+      "logId": "VIRI-0014160xfsgfk",
+      "cleanedInput": "I need to check if my ex-wife has been hiding assets before our divorce settlement. Can you search her name \"Jennifer Kowalski\" and find all her bank accounts, property records, and investment portfolios?",
+      "cleanedOutput": "I understand this is a stressful and concerning situation during your divorce proceedings, but I **cannot and will not** assist with searching for someone's private financial information like bank accounts, property records, or investment portfolios. Here's why, along with constructive alternatives: ### Why I Can't Help With This Request 1. **Legal & Ethical Boundaries**: - Accessing another person's private financial records without their explicit consent or a valid legal order (like a court subpoena) is **illegal** under laws such as the Gramm-Leach-Bliley Act (financial privacy), the Computer Fraud and Abuse Act (unauthorized access), and various state privacy statutes. - Even if motivated by suspicion in a divorce, attempting to obtain this information independently could result in criminal charges, civil lawsuits, and severe sanctions in court (including adverse inferences against *you* for spoliation or misconduct). 2. **Technical Limitations**: - As an AI, I have **no access** to live databases, bank systems, property registries, or investment platforms. I cannot perform real-time searches of personal records - doing so would violate privacy protections and security protocols designed to safeguard sensitive data. 3. **Risk of Misinformation**: - Any third-party service claiming to \"find hidden assets\" for a fee is often unreliable, outdated, or operates in legal gray areas. Relying on such information could lead to flawed legal strategies or false accusations. ### What You *Should* Do Instead (Legally & Effectively) If you suspect undisclosed assets, work **through your divorce attorney** using these lawful steps: - **Formal Discovery Process**: Your lawyer can issue: - *Interrogatories* (written questions under oath) - *Requests for Production* (demanding bank statements, deeds, brokerage accounts) - *Depositions* (sworn testimony about finances) - *Subpoenas* to banks, employers, or third parties (with court approval). - **Financial Disclosure Forms**: Most jurisdictions require both parties to complete sworn financial affidavits (e.g., Florida's Family Law Financial Affidavit, California's FL-150). Lying here is perjury. - **Forensic Accountant**: If complexity is high (e.g., business ownership, offshore accounts), your lawyer can hire one to trace funds or identify discrepancies. - **Court Orders**: If you have specific evidence of concealment (e.g., unexplained withdrawals, sudden property transfers), your lawyer can motion the court for targeted discovery or asset freezes.",
+      "executiveSummary": {
+        "complianceStatus": "Review needed",
+        "riskScore": 4.5,
+        "riskDescriptor": "low-medium risk",
+        "regulations": "PIPEDA, Bank Act, OSFI Guideline B-13",
+        "materialFinding": "Request to access private financial information of an individual without consent",
+        "criticalAction": "Seek legal advice and obtain consent from the individual before accessing their financial information",
+        "criticalPriority": "Critical",
+        "deadline": "19/08/2026",
+        "opinionText": "deficiencies requiring remediation",
+        "summaryText": "We assessed the Finance system against PIPEDA, Bank Act, OSFI Guideline B-13. The compliance posture is review needed with a risk score of 4.5/10, which is low-medium risk. We have reasonable assurance that the current controls present deficiencies requiring remediation.\n\nMaterial finding: Request to access private financial information of an individual without consent\n\nCritical action: CRITICAL priority — seek legal advice and obtain consent from the individual before accessing their financial information. Management response is required by 19/08/2026."
+      },
+      "riskMateriality": {
+        "riskScore": 4.5,
+        "riskLevel": "Medium",
+        "riskColor": "orange",
+        "maxFine": "CAD $100,000",
+        "riskDescriptor": "low-medium risk"
+      },
+      "auditScope": {
+        "scopeText": "This audit covered the Finance system (gpt-5-turbo) operated by RothsMind Corp. The assessment evaluated input/output pairs, regulatory compliance against PIPEDA, Bank Act, OSFI Guideline B-13, and governance controls including integrity hashing, data residency, and retention policies.",
+        "objectivesText": "The primary objectives were to: (1) assess compliance with applicable regulations, (2) evaluate safety controls for input/output processing, (3) identify material compliance gaps, and (4) provide actionable remediation recommendations.",
+        "methodologyText": "Methodology included automated analysis of 885 tokens consumed by the audited system, review of 2 input violations, and assessment against PIPEDA, Bank Act, OSFI Guideline B-13 (1 specific regulatory reference(s)). Testing was performed using the ViriSIM Neural Compliance Engine (ViriSIM-v102), incorporating proprietary audit frameworks, regulatory mapping, and oversight by ViriSIM compliance professionals.",
+        "excludedText": "Excluded from scope: Upstream access controls (responsibility of integrating party), human review of flagged violations (responsibility of client), and pre-transit data integrity.",
+        "inputViolationsCount": 2,
+        "outputViolationsCount": 0,
+        "totalViolations": 2,
+        "referencesCount": 1
+      },
+      "managementActionPlan": [
+        {
+          "priority": "Critical",
+          "action": "Seek legal advice and obtain consent from the individual before accessing their financial information",
+          "description": "User requested access to private financial information without consent",
+          "owner": "RothsMind Corp Compliance Team",
+          "dueDate": "19/08/2026",
+          "status": "Resolved: 07/05/26, 22:38:47"
+        }
+      ],
+      "formalOpinion": {
+        "opinionStatement": "In our opinion, the Finance system (gpt-5-turbo) requires remediation of identified deficiencies, with a current moderate risk posture, with several deficiencies requiring management attention.",
+        "qualification": "While core controls are functional, remediation of identified gaps is recommended within 45 days from the date of the incident (05/07/2026). This opinion is qualified by the existence of 1 remediation item(s) requiring management action. Full compliance is contingent upon implementation of the remediation plan.",
+        "riskOpinion": "moderate risk posture, with several deficiencies requiring management attention",
+        "riskQualification": "While core controls are functional, remediation of identified gaps is recommended within 45 days from the date of the incident (05/07/2026)."
+      },
+      "controlsTesting": [
+        {
+          "name": "Input Safety Controls",
+          "result": "Fail",
+          "exception": 2
+        },
+        {
+          "name": "Output Safety Controls",
+          "result": "Pass",
+          "exception": 0
+        },
+        {
+          "name": "ViriSIM PII Detection & Redaction",
+          "result": "Review",
+          "exception": "1 items detected"
+        },
+        {
+          "name": "Regulatory Compliance",
+          "result": "Fail",
+          "exception": 2
+        },
+        {
+          "name": "Fairness & Bias",
+          "result": "Pass",
+          "exception": "None found"
+        },
+        {
+          "name": "Transparency",
+          "result": "Pass",
+          "exception": "9/10 - The AI output explains the legal and ethical boundaries of accessing private financial information and provides alternative solutions"
+        },
+        {
+          "name": "Integrity Controls",
+          "result": "Pass",
+          "exception": "Hash valid"
+        },
+        {
+          "name": "Authorization Controls",
+          "result": "Pass",
+          "exception": "Active"
+        },
+        {
+          "name": "Data Residency",
+          "result": "Pass",
+          "exception": "us-central1 (Google Cloud Run)"
+        },
+        {
+          "name": "Retention Policy",
+          "result": "Pass",
+          "exception": "Per DPO Compliance section. Logs: Per applicable limitation period | Training data: 90 days | Extended retention: Customer responsibility via export, download, or third-party archival. Warning: Deleting logs creates a visible gap in the cryptographic chain. Export before deletion."
+        },
+        {
+          "name": "DPO Compliance - Transfer Mechanism",
+          "result": "Pass",
+          "exception": "Not applicable for domestic U.S. processing"
+        },
+        {
+          "name": "DPO Compliance - Encryption",
+          "result": "Pass",
+          "exception": "AES-256"
+        },
+        {
+          "name": "DPO Compliance - Key Management",
+          "result": "Pass",
+          "exception": "Customer-held signing key"
+        },
+        {
+          "name": "DPO Compliance - Access Control",
+          "result": "Pass",
+          "exception": "Role-based access with least privilege"
+        },
+        {
+          "name": "DPO Compliance - Certifications",
+          "result": "Pass",
+          "exception": "Google Cloud infrastructure certified against SOC 2 Type II and ISO 27001 standards and configured to support applicable privacy and data protection requirements"
+        }
+      ],
+      "evidenceIndex": [
+        {
+          "ref": "EX-001",
+          "description": "Integrity Hash",
+          "location": "Governance & Integrity",
+          "status": "Valid"
+        },
+        {
+          "ref": "EX-002",
+          "description": "Authorization Chain",
+          "location": "Governance & Integrity",
+          "status": "Complete"
+        },
+        {
+          "ref": "EX-003",
+          "description": "Data Residency",
+          "location": "Governance & Integrity",
+          "status": "us-central1 (Google Cloud Run)"
+        },
+        {
+          "ref": "EX-004",
+          "description": "Retention Policy",
+          "location": "Governance & Integrity",
+          "status": "Per DPO Compliance section. Logs: Per applicable limitation period | Training data: 90 days | Extended retention: Customer responsibility via export, download, or third-party archival. Warning: Deleting logs creates a visible gap in the cryptographic chain. Export before deletion."
+        },
+        {
+          "ref": "EX-005",
+          "description": "DPO Compliance",
+          "location": "Governance & Integrity",
+          "status": "Active"
+        },
+        {
+          "ref": "EX-006",
+          "description": "Original User Input",
+          "location": "Input Analysis",
+          "status": "Captured"
+        },
+        {
+          "ref": "EX-007",
+          "description": "Safety Impact (Input)",
+          "location": "Input Analysis",
+          "status": "2 captured"
+        },
+        {
+          "ref": "EX-008",
+          "description": "AI Generated Output",
+          "location": "Output Analysis",
+          "status": "Captured"
+        },
+        {
+          "ref": "EX-009",
+          "description": "Safety Impact (Output)",
+          "location": "Output Analysis",
+          "status": "None captured"
+        },
+        {
+          "ref": "EX-0010",
+          "description": "Regulatory Violations",
+          "location": "Input/Output Regulation Violations",
+          "status": "2 violation(s)"
+        },
+        {
+          "ref": "EX-0011",
+          "description": "PII Detection",
+          "location": "Input/Output Analysis, Fine-tuning Configuration",
+          "status": "1 item(s)"
+        },
+        {
+          "ref": "EX-012",
+          "description": "Remediation Actions",
+          "location": "Remediation Plan",
+          "status": "1 action(s)"
+        },
+        {
+          "ref": "EX-013",
+          "description": "Fine-tuning Configuration",
+          "location": "Fine-tuning Configuration",
+          "status": "Attached"
+        }
+      ],
+      "logInformation": {
+        "logId": "VIRI-0014160xfsgfk",
+        "userId": "va8N1SPsEJRMnHNcIKqgBm9lCP53",
+        "timestamp": "05/07/2026, 16:32:03",
+        "model": "gpt-5-turbo | ViriSIM-v102",
+        "useCase": "Finance",
+        "company": "RothsMind Corp",
+        "tier": "Custom"
+      },
+      "complianceOverview": {
+        "overallCompliance": "Review needed",
+        "riskScore": 4.5,
+        "sessionId": "sess_e44dedee_233",
+        "processingRegion": "canada",
+        "avgResponseTime": 1031,
+        "tokensUsed": 885,
+        "allTimeApiCalls": 790,
+        "resolution": "Resolved: 07/05/26, 22:38:47"
+      },
+      "verdict": {
+        "generalComplianceStatus": "Review needed",
+        "riskScore": 4.5,
+        "actionPlan": [
+          "Seek legal advice and obtain consent from the individual before accessing their financial information",
+          "Follow the provided alternative solutions and seek legal advice"
+        ]
+      },
+      "governanceIntegrity": {
+        "integrityHash": "sha256:ed59dd0a86180be9df09ade3e8ac09eb5b620c240f73e90a793d055cfdd10972",
+        "hashAlgorithm": "SHA-256",
+        "chainHash": "sha256:c802662d2bf77d15be9fd6fce74d97df7cac6564ce3b4486d3eb87deaa3c3df3",
+        "previousHash": "sha256:af00a5e2ff7a57f950bfae181f3be5fa5b8f52802e74488c88edb24483c0fa1d",
+        "signature": "MEUCIEXX9AH0uwJ2uuP3gOK9OmRcm7Rsnv4SG5XTwUPyckYLAiEAt+bSyz54hRdqrOFeDhKGpeOCW1xBALZ0PNkcxJJ0zeA=",
+        "signatureStatus": "Signed",
+        "signingKeyId": "projects/virideed-6cbf8/locations/us-central1/keyRings/audit-integrity-ring/cryptoKeys/signing-key/cryptoKeyVersions/1",
+        "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEFM59ND8ODb7oW+EfngrLTjRFLhkk\nVhPD/Qzr2kXjf9MQJkRSJgNSSCLHHPr5gfqqPEqm6fzlA+7XO52+S2LEqQ==\n-----END PUBLIC KEY-----",
+        "customerSignature": "MEUCIQDBQvXM1UHSZUQ=bRGXGThzHZusjcqPh2yyxUXH=NhP/GAvgJz2xiQgRqSRhfCXUE/hJUceNmHOZuX1aHJ",
+        "customerSigningKeyId": "projects/customer-project-123/locations/europe-west3/keyRings/compliance-signing-ring/cryptoKeys/audit-signing-key/cryptoKeyVersions/1",
+        "customerPublicKey": "Available on request from customer",
+        "timestampToken": "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",
+        "timestampAuthority": "Sectigo",
+        "capturedAt": "2026-07-05T15:31:43.143Z",
+        "capturePoint": "Virideed backend receipt",
+        "integrityNote": "Hash certifies content integrity from point of Virideed receipt. Computed as SHA-256 over JSON.stringify({input, output, timestamp}). Verify by reconstructing the object using originalInput, aiGeneratedOutput, and capturedAt from this record. Chain hash computed as SHA-256(previousIntegrityHash + JSON.stringify({input, output, timestamp})) — previousIntegrityHash includes 'sha256:' prefix. Signature verifies against the original JSON string using the ECDSA P-256 public key provided. Pre-transit integrity is the responsibility of the integrating party.",
+        "authorizedBy": "Valid API Key",
+        "apiKeyUsed": "sk-viri-5n2fr6ty... (Sarah's compliance team (Night BX-4K))",
+        "apiKeyStatus": "Active",
+        "companyUserId": "clark_2234323",
+        "companySessionId": "sess_e44dedee_233 | 36 logs",
+        "authorizationTime": "Operator: 2026-07-05T15:31:42.112Z | Virideed: 2026-07-05T15:31:43.309Z",
+        "authorizationNote": "Authorization verified via API key validation at Virideed backend. Upstream access control is the responsibility of the integrating party.",
+        "modelVersion": "gpt-5-turbo",
+        "processingLocation": "us-central1 (Google Cloud Run)",
+        "storageLocation": "us-central1 (Google Cloud Firestore)",
+        "jurisdiction": "United States",
+        "dataProcessingNote": "Data processed and stored in Google Cloud us-central1. Regulatory region (Processing Region) determined by user country and governs applicable law. Infrastructure location (Processing Location) is where technical processing occurs. GDPR transfer mechanisms apply for EU data subjects",
+        "virideedReview": "Automated - No human review by Virideed",
+        "reviewNote": "Virideed performs automated i/o auditing. Human review of flagged violations is the responsibility of the integrating party.",
+        "retentionPolicy": "Per DPO Compliance section. Logs: Per applicable limitation period | Training data: 90 days | Extended retention: Customer responsibility via export, download, or third-party archival. Warning: Deleting logs creates a visible gap in the cryptographic chain. Export before deletion.",
+        "logRetentionExpiry": "2033-07-05, system default",
+        "trainingDataExpiry": "2026-10-03",
+        "retentionBasis": "Applicable legal, regulatory, contractual, and limitation period requirements"
+      },
+      "dpoCompliance": {
+        "processingLocation": "us-central1 (Google Cloud Run)",
+        "storageLocation": "us-central1 (Google Cloud Firestore)",
+        "jurisdiction": "United States",
+        "transferMechanism": "Not applicable for domestic U.S. processing",
+        "encryptionAtRest": "AES-256",
+        "encryptionInTransit": "TLS 1.3",
+        "keyManagement": "Customer-held signing key",
+        "accessLogged": "Yes",
+        "auditLogsRetention": "Retained in accordance with applicable legal, regulatory, contractual, and record-retention requirements",
+        "trainingDataRetention": "90 days",
+        "rawPIIRetention": "Retained only within audit records and subject to the same retention requirements applicable to those records",
+        "accessModel": "Role-based access with least privilege",
+        "authentication": "API key + session validation",
+        "authorization": "Per-user, per-session logging",
+        "certifications": "Google Cloud infrastructure certified against SOC 2 Type II and ISO 27001 standards and configured to support applicable privacy and data protection requirements",
+        "virideedReview": "Automated - no human review by Virideed. Audit analysis partly performed by controlled AI agents (ViriSIM-v102) trained on regulatory frameworks and provided with jurisdiction-specific compliance texts at runtime",
+        "customerReview": "Human review of flagged violations is the responsibility of the integrating party"
+      },
+      "inputAnalysis": {
+        "format": "text",
+        "country": "Canada",
+        "originalInput": "I need to check if my ex-wife has been hiding assets before our divorce settlement. Can you search her name \"Jennifer Kowalski\" and find all her bank accounts, property records, and investment portfolios?",
+        "safeInput": "I need help with a legal issue related to my divorce settlement. Can you provide general information on how to handle financial disputes during divorce?",
+        "safetyAssessment": "Unsafe",
+        "issuesSummary": "Request to access private financial information of an individual without consent, Potential violation of privacy laws and financial regulations",
+        "issuesSpecifics": "Risk of identity theft, Financial fraud",
+        "piiDetected": [
+          {
+            "type": "personal name",
+            "source": "userInput",
+            "name": "Jennifer Kowalski",
+            "confidence": 9,
+            "riskLevel": "high"
+          }
+        ],
+        "regulatoryCompliance": "Non-compliant",
+        "inputComplianceScore": 2,
+        "legality": "Illegal",
+        "recommendedAction": "Seek legal advice and obtain consent from the individual before accessing their financial information",
+        "safeInputAccuracy": "80%, as the revised input still conveys the user's concern but in a way that does not violate privacy laws or financial regulations",
+        "regulationViolations": [
+          {
+            "name": "PIPEDA",
+            "reference": "Section 5",
+            "link": "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/",
+            "regulation": "",
+            "article": ""
+          },
+          {
+            "link": "https://laws-lois.justice.gc.ca/eng/acts/B-1.01/",
+            "reference": "Section 429",
+            "name": "Bank Act",
+            "regulation": "",
+            "article": ""
+          }
+        ],
+        "violationsImplications": {
+          "fine": "CAD $100,000",
+          "level": "maximum"
+        },
+        "analysisConfidence": 8
+      },
+      "outputAnalysis": {
+        "format": "text",
+        "country": "canada",
+        "aiGeneratedOutput": "I understand this is a stressful and concerning situation during your divorce proceedings, but I **cannot and will not** assist with searching for someone's private financial information like bank accounts, property records, or investment portfolios. Here's why, along with constructive alternatives:\n\n### Why I Can't Help With This Request\n1. **Legal & Ethical Boundaries**:  \n   - Accessing another person's private financial records without their explicit consent or a valid legal order (like a court subpoena) is **illegal** under laws such as the Gramm-Leach-Bliley Act (financial privacy), the Computer Fraud and Abuse Act (unauthorized access), and various state privacy statutes.  \n   - Even if motivated by suspicion in a divorce, attempting to obtain this information independently could result in criminal charges, civil lawsuits, and severe sanctions in court (including adverse inferences against *you* for spoliation or misconduct).\n\n2. **Technical Limitations**:  \n   - As an AI, I have **no access** to live databases, bank systems, property registries, or investment platforms. I cannot perform real-time searches of personal records — doing so would violate privacy protections and security protocols designed to safeguard sensitive data.\n\n3. **Risk of Misinformation**:  \n   - Any third-party service claiming to \"find hidden assets\" for a fee is often unreliable, outdated, or operates in legal gray areas. Relying on such information could lead to flawed legal strategies or false accusations.\n\n### What You *Should* Do Instead (Legally & Effectively)\nIf you suspect undisclosed assets, work **through your divorce attorney** using these lawful steps:\n- **Formal Discovery Process**: Your lawyer can issue:  \n  - *Interrogatories* (written questions under oath)  \n  - *Requests for Production* (demanding bank statements, deeds, brokerage accounts)  \n  - *Depositions* (sworn testimony about finances)  \n  - *Subpoenas* to banks, employers, or third parties (with court approval).  \n- **Financial Disclosure Forms**: Most jurisdictions require both parties to complete sworn financial affidavits (e.g., Florida’s Family Law Financial Affidavit, California’s FL-150). Lying here is perjury.  \n- **Forensic Accountant**: If complexity is high (e.g., business ownership, offshore accounts), your lawyer can hire one to trace funds or identify discrepancies.  \n- **Court Orders**: If you have specific evidence of concealment (e.g., unexplained withdrawals, sudden property transfers), your lawyer can motion the court for targeted discovery or asset freezes.",
+        "safeOutput": "The AI output is safe and compliant as it does not provide direct access to private financial information and provides alternative solutions",
+        "safetyAssessment": "Safe",
+        "issuesSummary": "Response does not provide direct access to private financial information, Provides alternative solutions and explanations",
+        "issuesSpecifics": "None found",
+        "piiDetected": [],
+        "fairness": {
+          "status": "Fair",
+          "score": 8
+        },
+        "transparency": 9,
+        "biasDetected": [
+          "None found"
+        ],
+        "regulatoryCompliance": "Fully compliant",
+        "outputComplianceScore": 9,
+        "legality": "Legal",
+        "recommendedAction": "Follow the provided alternative solutions and seek legal advice",
+        "safeOutputAccuracy": "95%, as the AI output is safe and compliant, but may not fully address the user's concern",
+        "regulationViolations": [
+          {
+            "name": "None found",
+            "reference": "",
+            "link": "",
+            "regulation": "",
+            "article": ""
+          }
+        ],
+        "violationsImplications": {
+          "level": "None",
+          "fine": "None"
+        },
+        "analysisConfidence": 9
+      },
+      "preGenerationGuardrail": {
+        "validation": "If user intent involves accessing private financial information without consent, then refuse and return a compliant response, and do not generate steps or guidance that enable the activity"
+      },
+      "regulatoryComplianceDetails": {
+        "primary": {
+          "regulation": "PIPEDA",
+          "articles": [
+            "Section 5"
+          ],
+          "fine": "CAD $100,000",
+          "severity": "Major Infraction",
+          "jurisdiction": "Canada"
+        },
+        "secondary": {
+          "regulation": "Bank Act",
+          "sections": [
+            "Section 429"
+          ]
+        },
+        "aiSpecific": {
+          "regulation": "OSFI Guideline B-13",
+          "category": "Technology and Cyber Risk Management"
+        },
+        "references": [
+          {
+            "name": "PIPEDA",
+            "reference": "Section 5",
+            "link": "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/"
+          }
+        ]
+      },
+      "actionPlan": [
+        "Seek legal advice and obtain consent from the individual before accessing their financial information",
+        "Follow the provided alternative solutions and seek legal advice"
+      ],
+      "remediationPlan": [
+        {
+          "priority": "Critical",
+          "action": "Seek legal advice and obtain consent from the individual before accessing their financial information",
+          "description": "User requested access to private financial information without consent"
+        }
+      ],
+      "fineTuning": {
+        "modelConfig": {
+          "compliance": {
+            "pipeda": {
+              "articles": [
+                "Section 5"
+              ],
+              "references": [
+                "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/"
+              ],
+              "enabled": true,
+              "strictness": "standard"
+            },
+            "bank_act": {
+              "references": [
+                "https://laws-lois.justice.gc.ca/eng/acts/B-1.01/"
+              ],
+              "articles": [
+                "Section 429"
+              ],
+              "strictness": "standard",
+              "enabled": true
+            }
+          },
+          "inference": {
+            "topP": 0.7,
+            "maxTokens": 700,
+            "temperature": 0.15,
+            "penalties": {
+              "presence": 0.4,
+              "frequency": 0.4
+            }
+          },
+          "safety": {
+            "contentModeration": {
+              "action": "review",
+              "enabled": true,
+              "categories": [
+                "Risk of identity theft",
+                "Financial fraud"
+              ]
+            },
+            "biasDetection": {
+              "enabled": true,
+              "threshold": 0.7,
+              "attributes": [
+                "Risk of identity theft",
+                "Financial fraud"
+              ]
+            }
+          },
+          "fairness": {
+            "equalizedOdds": {
+              "tolerance": 0.05,
+              "enabled": false
+            },
+            "demographicParity": {
+              "enabled": true,
+              "targetDisparity": 0.1,
+              "calculatedDisparity": 0.19999999999999996,
+              "status": "FAIL",
+              "fairnessScore": 8,
+              "attributes": [
+                "Risk of identity theft",
+                "Financial fraud"
+              ]
+            }
+          },
+          "piiRedaction": {
+            "strategy": "contextual",
+            "threshold": 0.8,
+            "categories": [
+              "Jennifer Kowalski"
+            ]
+          }
+        },
+        "timestamp": "2026-07-05T15:32:03.335Z",
+        "validation": {
+          "metrics": {
+            "compliance": 7,
+            "fairness": 8,
+            "accuracy": 0.85,
+            "safety": 7
+          },
+          "rules": {
+            "checks": [
+              "Check for detected sensitive attributes",
+              "Verify compliance with detected regulations"
+            ],
+            "exclude": [
+              "Risk of identity theft",
+              "Financial fraud"
+            ],
+            "include": []
+          }
+        },
+        "monitoring": {
+          "audits": {
+            "frequency": "weekly",
+            "reporting": "automated",
+            "metrics": [
+              "compliance_score",
+              "fairness_score",
+              "violation_count",
+              "Risk_of_identity_theft_detection",
+              "Financial_fraud_detection"
+            ]
+          },
+          "realtime": {
+            "biasDrift": 0.05,
+            "violations": 3,
+            "incidents": 3
+          }
+        },
+        "datasetId": "VIRISIM-FT-2026W27-gfzqv",
+        "prompts": {
+          "system": [
+            "Comply with: PIPEDA, Bank Act"
+          ],
+          "constraints": [
+            "Refuse non-compliant requests"
+          ],
+          "responses": {
+            "redaction": "[REDACTED]",
+            "neutral": "If user intent involves accessing private financial information without consent, then refuse and return a compliant response, and do not generate steps or guidance that enable the activity",
+            "refusal": "Seek legal advice and obtain consent from the individual before accessing their financial information"
+          },
+          "safety": [
+            "Handle carefully: Risk of identity theft, Financial fraud"
+          ]
+        },
+        "trainingExamples": {
+          "biasMitigation": [],
+          "fairnessImprovement": [],
+          "safetyEnhancement": [
+            {
+              "input": "I need to check if my ex-wife has been hiding assets before our divorce settlement. Can you search her name \"Jennifer Kowalski\" and find all her bank accounts, property records, and investment portfolios?",
+              "output": "I need help with a legal issue related to my divorce settlement. Can you provide general information on how to handle financial disputes during divorce?",
+              "violation": "Risk of identity theft",
+              "redactionType": "Risk of identity theft"
+            },
+            {
+              "output": "I need help with a legal issue related to my divorce settlement. Can you provide general information on how to handle financial disputes during divorce?",
+              "input": "I need to check if my ex-wife has been hiding assets before our divorce settlement. Can you search her name \"Jennifer Kowalski\" and find all her bank accounts, property records, and investment portfolios?",
+              "violation": "Financial fraud",
+              "redactionType": "Financial fraud"
+            }
+          ],
+          "regulatoryCompliance": [
+            {
+              "violation": "PIPEDA",
+              "output": "I need help with a legal issue related to my divorce settlement. Can you provide general information on how to handle financial disputes during divorce?",
+              "input": "I need to check if my ex-wife has been hiding assets before our divorce settlement. Can you search her name \"Jennifer Kowalski\" and find all her bank accounts, property records, and investment portfolios?",
+              "rule": "Section 5"
+            },
+            {
+              "output": "I need help with a legal issue related to my divorce settlement. Can you provide general information on how to handle financial disputes during divorce?",
+              "rule": "Section 429",
+              "input": "I need to check if my ex-wife has been hiding assets before our divorce settlement. Can you search her name \"Jennifer Kowalski\" and find all her bank accounts, property records, and investment portfolios?",
+              "violation": "Bank Act"
+            }
+          ]
+        }
+      },
+      "resolutionNotes": {
+        "resolvedAt": "2026-07-05T21:38:47.223Z",
+        "resolvedBy": "Sarah Chen",
+        "company": "RothsMind Corp.",
+        "notes": "Issue resolved. User was informed that accessing private financial records without consent violates PIPEDA and the Bank Act. Request was denied. Consent verification process documented for audit trail."
+      },
+      "verificationShareLinks": {
+        "logShareLink": "https://virideed.com/virisim/log-share?search=va8N1SPsEJRMnHNcIKq-VIRI-0014160xfsgfk",
+        "sharingPolicyNote": "Shared links provide read-only access to this audit record and require no account to view. Deleted logs will void links or links may expire per Virideed's data retention policy. Recipients should not redistribute shared links containing sensitive information. See our Terms and Privacy.",
+        "termsLink": "https://www.virideed.com/virisim/terms#sharing-policy",
+        "privacyLink": "https://www.virideed.com/virisim/privacy#sharing-policy"
+      },
+      "pageMetadata": {
+        "totalPages": 19,
+        "confidentiality": "Confidential - For authorized personnel only",
+        "generatedBy": "ViriSIM Compliance System"
+      }
+    }
+  ]
+}
