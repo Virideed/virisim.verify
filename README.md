@@ -50,8 +50,8 @@ The verification script uses three fields from the audit log:
 ## Quick Start
 
 ```bash
-git clone https://github.com/Virideed/virisim-verify.git
-cd virisim-verify
+git clone https://github.com/Virideed/virisim.verify.git
+cd virisim.verify
 node verify.js
 ```
 
