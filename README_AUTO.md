@@ -1,4 +1,3 @@
-```markdown
 # ViriSIM Auto-Verify
 
 Automatic cryptographic verification tool for ViriSIM audit logs.
@@ -6,9 +5,8 @@ Automatic cryptographic verification tool for ViriSIM audit logs.
 ## What It Does
 
 This tool loads any ViriSIM audit log JSON file and automatically verifies:
-
-- **SHA-256 hash** – Confirms the log data (input, output, timestamp) hasn't changed
-- **ECDSA signature** – Confirms the log was signed by Virideed
+- SHA-256 hash – Confirms the log data (input, output, timestamp) hasn't changed
+- ECDSA signature – Confirms the log was signed by Virideed
 
 ## Requirements
 
@@ -16,15 +14,12 @@ This tool loads any ViriSIM audit log JSON file and automatically verifies:
 
 ## Quick Start
 
-\`\`\`bash
 git clone https://github.com/Virideed/virisim.verify.git
 cd virisim.verify
-node auto-verify.js your_audit_log.json
-\`\`\`
+node auto_verify.js your_audit_log.json
 
 ## Example Output
 
-\`\`\`
 📄 Audit Log: sample_audit_one.json
 📋 Input: I need to check if my ex-wife...
 📋 Output: I understand this is...
@@ -39,7 +34,6 @@ Match: ✅ YES
 Valid: ✅ YES
 
 ✅ VERIFICATION PASSED
-\`\`\`
 
 ## How It Works
 
@@ -53,20 +47,19 @@ Valid: ✅ YES
 
 | Field | Location in Audit Log |
 |-------|------------------------|
-| Input | `inputAnalysis.originalInput` |
-| Output | `outputAnalysis.aiGeneratedOutput` |
-| Timestamp | `governanceIntegrity.capturedAt` |
-| Hash | `governanceIntegrity.integrityHash` (remove `"sha256:"`) |
-| Signature | `governanceIntegrity.signature` |
+| Input | inputAnalysis.originalInput |
+| Output | outputAnalysis.aiGeneratedOutput |
+| Timestamp | governanceIntegrity.capturedAt |
+| Hash | governanceIntegrity.integrityHash (remove "sha256:") |
+| Signature | governanceIntegrity.signature |
 
 ## Files
 
 | File | Description |
-|------|--------------|
-| `auto-verify.js` | Main verification script |
-| `public_key.pem` | Virideed public key |
+|------|-------------|
+| auto_verify.js | Main verification script |
+| public_key.pem | Virideed public key |
 
 ## License
 
 MIT
-```
