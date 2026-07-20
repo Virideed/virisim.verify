@@ -86,10 +86,10 @@ function verifyAuditLog(filePath) {
         console.log('='.repeat(50));
         if (computedHash === expectedHash && isValid) {
             console.log('✅ VERIFICATION PASSED');
-            console.log('   The audit log is authentic and has not been tampered with.');
+            console.log('   The input, output and timestamp are authentic and has not been tampered with.');
         } else {
             console.log('❌ VERIFICATION FAILED');
-            console.log('   The audit log may have been tampered with or is not authentic.');
+            console.log('   The input, output or timestamp may have been tampered with or is not authentic.');
         }
         
     } catch (error) {
