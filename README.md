@@ -91,6 +91,70 @@ node verify.js
 | `verify.js` | Main verification script |
 | `public_key.pem` | Virideed public key |
 
+---
+
+## 📘 About Virideed
+
+### The Problem
+
+AI is making high-stakes decisions — compliance, regulation, finance, legal. But **no one can independently prove** what the AI did, when, why, or that nothing was tampered with.
+
+Regulators and auditors need verifiable evidence of inputs, outputs, decisions, and chain of custody. Traditional logging is trust-based. You can't verify it independently.
+
+### Our Solution
+
+Virideed provides a **tamper-evident, cryptographically verifiable compliance layer** for AI systems:
+
+- **Cryptographic Evidence Chain** — Every decision is hashed, signed, and timestamped
+- **Runtime Guardrails** — Input/output filtering, safety checks, bias detection
+- **Regulatory Mapping** — Automatic mapping to EU AI Act, GDPR, ISO, etc.
+- **Audit-Ready Reports** — Technical documentation for regulators (Annex IV compliant)
+- **Open Verification** — Anyone can verify the evidence chain independently
+
+### Who We Are
+
+We're a compliance technology company founded by experts in AI governance, cryptography, and regulatory tech. Our mission: make AI **trustworthy by default** — not by trusting the provider, but by making every decision **independently verifiable**.
+
+We work with AI providers, enterprises, regulators, and auditors.
+
+### Why It Matters
+
+When an AI affects your business, customers, or regulatory standing — **you need to prove what happened**. Virideed gives you that proof.
+
+---
+
+## Verification Flow
+
+```mermaid
+flowchart LR
+    A[AI Executes] --> B[Audit Log Created]
+    B --> C[Hash Computed]
+    C --> D[Stored in ViriSIM]
+    D --> E[Regulator Requests Evidence]
+    E --> F[Audit JSON Exported]
+    F --> G[Hash Verifier Tool]
+    G --> H{Hash Matches?}
+    H -->|✅| I[Evidence Validated]
+    H -->|❌| J[Evidence Tampered]
+```
+
+1. Get Your Audit JSON — Download from ViriSIM dashboard
+2. Verify the Hash — Tool checks if audit was tampered
+3. Verify the Chain — Each audit links to previous, creating verifiable custody
+4. Submit to Regulators — Provide verified audit and results
+
+Any tampering breaks the hash and is immediately detectable.
+
+---
+
+## 📬 Contact
+
+- **Website:** [virideed.com](https://virideed.com)
+- **Email:** [support@virideed.com](mailto:support@virideed.com)
+- **Issues:** [GitHub Issues](https://github.com/Virideed/virisim-hash-verify/issues)
+
+---
+
 ## License
 
 MIT
