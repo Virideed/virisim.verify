@@ -125,6 +125,7 @@ When an AI affects your business, customers, or regulatory standing — **you ne
 
 ## Verification Flow
 
+```mermaid
 flowchart LR
     A[AI Executes] --> B[Audit Log Created]
     B --> C[Hash Computed]
@@ -135,7 +136,7 @@ flowchart LR
     G --> H{Hash Matches?}
     H -->|✅| I[Evidence Validated]
     H -->|❌| J[Evidence Tampered]
-
+```
 1. Get Your Audit JSON — Download from ViriSIM dashboard
 2. Verify the Hash — Tool checks if audit was tampered
 3. Verify the Chain — Each audit links to previous, creating verifiable custody
